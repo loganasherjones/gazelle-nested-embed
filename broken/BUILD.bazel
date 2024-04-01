@@ -1,0 +1,8 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "broken",
+    srcs = ["working.go"],
+    importpath = "github.com/loganasherjones/gazelle-nested-embed/broken",
+    visibility = ["//visibility:public"],
+)
